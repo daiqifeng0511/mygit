@@ -21,7 +21,7 @@ public  class UserController {
         List<User> users =userRepository.findByUsername(username);
         if (username=="")
         {
-            return "用户名不能为空";
+            return "用户名不能为空 ";
         }else
             {
             for (User u:users)

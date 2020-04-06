@@ -59,7 +59,7 @@ public  class UserController {
         }else {
             if (user.getPassword().equals(password)){
                 model.addAttribute("username",user.getUsername());
-                return username+"登录成功！";
+                return "homepage";
             }else {
                 model.addAttribute("username","fail");
                 return "用户名或密码错误！";
